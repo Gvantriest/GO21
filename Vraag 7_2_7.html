@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: url(Fotos_Visual/Naar_drive.png);
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+        }
+        .clickable-area {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 10px;
+            left: 1438px;
+            cursor: pointer;
+            background-color: red;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.getElementById('clickableArea').addEventListener('click', function() {
+                document.body.style.backgroundImage = "url('Fotos_Visual/In_drive.png')";
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="clickable-area" id="clickableArea"></div>
+</body>
+</html>
+
+
